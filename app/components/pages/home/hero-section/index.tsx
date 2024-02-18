@@ -7,15 +7,15 @@ import { TbBrandGithub, TbBrandLinkedin, TbBrandWhatsapp } from "react-icons/tb"
 
 const MOCK_CONTACTS = [
     {
-        url: 'https://github.com.br/eriveltonmatos',
+        url: 'https://github.com/EriveltonMatos',
         icon: <TbBrandGithub />
     },
     {
-        url: 'https://github.com.br/eriveltonmatos',
+        url: 'https://linkedin.com/in/erivelton-matos-5a7587123',
         icon: <TbBrandLinkedin />
     },
     {
-        url: 'https://github.com.br/eriveltonmatos',
+        url: 'https://wa.me/5585997247193',
         icon: <TbBrandWhatsapp />
     }
     
@@ -31,12 +31,14 @@ export const HeroSection = () => {
                    
                     <p className="text-gray-400 my-6 text-sm sm:text-base">Olá, meu nome é Erivelton Matos e sou desenvolvedor Fullstack com foco em Java/Spring e Next.js/React</p>
                     <div className="flex w-1/2 flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
-                            <TechBadge name="Java" />
+                            <TechBadge name="Java"/>
                             <TechBadge name="Spring" />
                             <TechBadge name="Next.js" />
                             <TechBadge name="React" />
                             <TechBadge name="Git" />
                             <TechBadge name="SQL" />
+                            <TechBadge name="Docker" />
+                            <TechBadge name="Tailwind" />
                             
                     </div>
                     <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">

@@ -12,7 +12,7 @@ export const ProjectCard = () => {
                 height={304}
                 alt="Thumbnail do projeto"
                 src="/images/imagem-projeto-teste.png" 
-                className="w-full h-[200pc] sm:h-[300px] lg:w-[420px] lg:min-h-full object-cover rounded-lg"
+                className="w-full  sm:h-[300px] lg:w-[420px] lg:min-h-full object-cover rounded-lg"
                 />
             </div>
             <div>
@@ -23,7 +23,7 @@ export const ProjectCard = () => {
                         alt=""
                         src="/images/icons/project-title-icon.svg"
                     />
-                    BookWise
+                    Em Atualização
                 </h3>
                 <p className="text-gray-400 my-6">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate rem accusantium dolorem? Sed vitae est totam quo veritatis mollitia ipsa unde perspiciatis vel architecto, dolorum error explicabo nam in amet voluptatem soluta corporis. Error neque inventore quae quisquam! Facere perspiciatis porro doloremque exercitationem obcaecati cum ab sapiente est sed aspernatur.
@@ -31,11 +31,7 @@ export const ProjectCard = () => {
 
                 <div className="flex gap-x-2 gap-y-3 flex-wrap mb-8 lg:max-w-[350px]" >
                     <TechBadge name="Next.js"/>
-                    <TechBadge name="Next-js"/>
-                    <TechBadge name="Next-js"/>
-                    <TechBadge name="Next-js"/>
-                    <TechBadge name="Next-js"/>
-                    <TechBadge name="Next-js"/>
+                    
                 </div>
 
                 <Link href="/projects/book-wise">

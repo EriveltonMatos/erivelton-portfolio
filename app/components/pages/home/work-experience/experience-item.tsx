@@ -66,8 +66,8 @@ export const ExperienceItem = () => {
                <div className="rounded-full border border-gray-500 p-0.5">
                     <Image 
                     src="/images/botelho-icon.jpg" 
-                    width={90}
-                    height={90}
+                    width={75}
+                    height={75}
                     className="rounded-full"
                     alt="Logo da empresa Cartório Botelho"
                     />

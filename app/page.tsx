@@ -1,3 +1,4 @@
+import { FooterSection } from "./components/pages/home/footer-section";
 import { HeroSection } from "./components/pages/home/hero-section";
 import { Highlightedprojects } from "./components/pages/home/highlighted-projects";
 import { KnownTechs } from "./components/pages/home/known-techs";
@@ -10,6 +11,7 @@ export default async function Home() {
       <KnownTechs />
       <Highlightedprojects />
       <WorkExperience />
+      <FooterSection />
     </>
   )
 }
