@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Button } from "@/app/components/button"
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { TbBrandGithub, TbBrandLinkedin, TbBrandWhatsapp } from "react-icons/tb";
+import 'animate.css';
 
 
 const MOCK_CONTACTS = [
@@ -24,9 +25,9 @@ const MOCK_CONTACTS = [
 export const HeroSection = () => {
     return(
         <section className="w-full lg:h-[755px] bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 py-32 lg:pb-[110ox]">
-            <div className="container flex items-start justify-between flex-col-reverse lg:flex-row">
-                <div className="w-full lg:max-w-[530px]">
-                    <p className="font-mono text-emerald-400">Olá, meu nome é</p>
+            <div className=" container flex items-start justify-between flex-col-reverse lg:flex-row">
+                <div className="animate__animated animate__fadeInLeft w-full lg:max-w-[530px]">
+                    <p className=" font-mono text-emerald-400">Olá, meu nome é</p>
                     <h2 className="text-4xl font-medium mt-2">Erivelton Matos</h2>
                    
                     <p className="text-gray-400 my-6 text-sm sm:text-base">Olá, meu nome é Erivelton Matos e sou desenvolvedor Fullstack com foco em Java/Spring e Next.js/React</p>
@@ -67,7 +68,7 @@ export const HeroSection = () => {
                     height={404}
                     src={"/images/profile-pic.jpg"}
                     alt="Foto de perfil do Erivelton Matos"
-                    className="w-[300px] h-[400px] lg:w-[404px] mb-6 lg:mb-0 shadow-2xl rounded-lg object-cover shadow-emerald-500"
+                    className="animate__animated animate__fadeInRight w-[300px] h-[400px] lg:w-[404px] mb-6 lg:mb-0 shadow-2xl rounded-lg object-cover shadow-emerald-500"
                 />
             </div>
         </section>

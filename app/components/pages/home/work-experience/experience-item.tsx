@@ -1,9 +1,27 @@
+import { MotionDiv } from "@/app/components/motion-div/motion-div"
 import { TechBadge } from "@/app/components/tech-badge"
 import Image from "next/image"
 
+
+const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1},
+}
+
 export const ExperienceItem = () => {
     return(
-        <div className="grid grid-cols-[40px 1fr] gap-4 md:gap-10">
+        <MotionDiv
+        variants={variants}
+        initial="hidden"
+        whileInView={{ opacity:1 }}
+        
+        transition={{
+            delay: 0.5,
+            ease: "easeInOut",
+            duration: 0.5,
+        }}
+        viewport={{ amount: 0 }}
+        className="grid grid-cols-[40px 1fr] gap-4 md:gap-10">
             <div className="flex items-center gap-4">
                <div className="rounded-full border border-gray-500 p-0.5">
                     <Image 
@@ -109,7 +127,7 @@ export const ExperienceItem = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </MotionDiv>
 
         
 

@@ -4,7 +4,7 @@ import { ProjectCard } from "./project-card"
 
 export const Highlightedprojects = () => {
     return (
-        <section className="container py-16">
+        <section className="container py-16 ">
             <SectionTitle subtitle="destaques" title="Projetos em destaque" />
             <HorizontalDivider className="mb-16"/>
 

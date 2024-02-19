@@ -414,6 +414,11 @@ ajv@^6.10.0, ajv@^6.12.4:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
+animate.css@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/animate.css/-/animate.css-4.1.1.tgz#614ec5a81131d7e4dc362a58143f7406abd68075"
+  integrity sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==
+
 ansi-regex@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-5.0.1.tgz#082cb2c89c9fe8659a311a53bd6a4dc5301db304"
@@ -1358,10 +1363,10 @@ fraction.js@^4.2.0:
   resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.2.0.tgz#448e5109a313a3527f5a3ab2119ec4cf0e0e2950"
   integrity sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==
 
-framer-motion@10.11.2:
-  version "10.11.2"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-10.11.2.tgz#0c423acbc3be232b364365b84cf3fd8a519c1044"
-  integrity sha512-IrwuC9regNOU99JoM/Z62CAMA3awGV6AcF7e3bcgXk/ZoNlGSt5aVq0J7UAwtLmCkwVlRvBkiMnvv2mZ1GW2pg==
+framer-motion@^11.0.5:
+  version "11.0.5"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-11.0.5.tgz#2ae1341d8605a01c50009d3bb195a67e4e2bfc69"
+  integrity sha512-Lb0EYbQcSK/pgyQUJm+KzsQrKrJRX9sFRyzl9hSr9gFG4Mk8yP7BjhuxvRXzblOM/+JxycrJdCDVmOQBsjpYlw==
   dependencies:
     tslib "^2.4.0"
   optionalDependencies:
@@ -1892,6 +1897,11 @@ lodash.merge@^4.6.2:
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
+lodash.throttle@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+  integrity sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==
+
 loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
@@ -2261,7 +2271,7 @@ prettier@^2.6.2:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.7.tgz#bb79fc8729308549d28fe3a98fce73d2c0656450"
   integrity sha512-yPngTo3aXUUmyuTjeTUT75txrf+aMh9FiD7q9ZE/i6r0bPb22g4FsE6Y338PQX1bmfy08i9QQCB7/rcUAVntfw==
 
-prop-types@^15.8.1:
+prop-types@^15.6.0, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -2319,6 +2329,15 @@ react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-on-screen@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-on-screen/-/react-on-screen-2.1.1.tgz#c66d78a8187457262d57f71766d1733f875e727a"
+  integrity sha512-mV2Ntd61ncJ9nBsXF/p5Y6lMDGTTwXTGvHaal4b7O1eX3GwSwDXKAe7KKXTf/4Oc1BuYc7j5Sy0XdT89w/MjDA==
+  dependencies:
+    lodash.throttle "^4.1.1"
+    prop-types "^15.6.0"
+    shallowequal "^1.0.2"
 
 react@18.2.0:
   version "18.2.0"
@@ -2429,6 +2448,11 @@ semver@^7.0.0, semver@^7.3.7, semver@^7.3.8:
   integrity sha512-RgOxM8Mw+7Zus0+zcLEUn8+JfoLpj/huFTItQy2hsM4khuC1HYRDp0cU482Ewn/Fcy6bCjufD8vAj7voC66KQw==
   dependencies:
     lru-cache "^6.0.0"
+
+shallowequal@^1.0.2:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
+  integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
 
 shebang-command@^2.0.0:
   version "2.0.0"
@@ -2610,6 +2634,11 @@ tailwindcss@3.3.1:
     quick-lru "^5.1.1"
     resolve "^1.22.1"
     sucrase "^3.29.0"
+
+taos@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/taos/-/taos-1.0.5.tgz#4669ad23455c2464dc7475b212ee63d015463de9"
+  integrity sha512-JSwR+ldec2dSjOnssN/VGjXSR44DbzUVeAXRDVEuMsc7xndx8ePcQ4QMAMUAL5V4KN1wlmhumyQ7aSykDf8uhw==
 
 tapable@^2.2.0:
   version "2.2.1"
