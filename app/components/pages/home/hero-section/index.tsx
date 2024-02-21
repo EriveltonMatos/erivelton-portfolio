@@ -1,7 +1,7 @@
 import { TechBadge } from "@/app/components/tech-badge"
 import Image from "next/image"
 import { Button } from "@/app/components/button"
-import { HiArrowNarrowRight } from 'react-icons/hi'
+import { Handshake } from 'lucide-react';
 import { TbBrandGithub, TbBrandLinkedin, TbBrandWhatsapp } from "react-icons/tb";
 import 'animate.css';
 
@@ -24,14 +24,14 @@ const MOCK_CONTACTS = [
 
 export const HeroSection = () => {
     return(
-        <section className="w-full lg:h-[755px] bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 py-32 lg:pb-[110ox]">
-            <div className=" container flex items-start justify-between flex-col-reverse lg:flex-row">
-                <div className="animate__animated animate__fadeInLeft w-full lg:max-w-[530px]">
-                    <p className=" font-mono text-emerald-400">Olá, meu nome é</p>
-                    <h2 className="text-4xl font-medium mt-2">Erivelton Matos</h2>
+        <section className=" w-full lg:justify-center lg:h-[755px] bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 py-32 lg:pb-[110ox] ">
+            <div className="max-sm:flex max-sm:justify-center max-sm:items-center container flex items-start justify-between flex-col-reverse lg:flex-row ">
+                <div className=" animate__animated animate__fadeInLeft w-full lg:max-w-[530px] ">
+                    <p className="max-sm:flex max-sm:justify-center  font-mono text-emerald-400">Olá, meu nome é</p>
+                    <h2 className=" max-sm:flex max-sm:justify-center text-4xl font-medium mt-2">Erivelton Matos</h2>
                    
-                    <p className="text-gray-400 my-6 text-sm sm:text-base">Olá, meu nome é Erivelton Matos e sou desenvolvedor Fullstack com foco em Java/Spring e Next.js/React</p>
-                    <div className="flex w-1/2 flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
+                    <p className="  text-gray-400 my-6 text-sm sm:text-base ">Atuo profissionalmente como <a href="https://www.totvs.com/blog/carreiras/desenvolvedor-full-stack/" className="text-gray-300">Desenvolvedor Fullstack</a> com experiência em Next.js, React, Java, SpringBoot, Javascript, Typescript, git, hibernate, MySQL, Docker, etc. Além de possuir conhecimento em ferramentas de design como Figma e Canva. Também atuo como editor de vídeos utilizando DaVinci Resolve. Formado em Sistemas de Informação e cursando pós-graduação em Engenharia de Software, Devops e Computação em Nuvem, além de ser apaixonado por desenvolvimento web</p>
+                    <div className=" max-sm:flex max-sm:justify-center max-sm:w-full flex w-1/2 flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
                             <TechBadge name="Java"/>
                             <TechBadge name="Spring" />
                             <TechBadge name="Next.js" />
@@ -42,19 +42,19 @@ export const HeroSection = () => {
                             <TechBadge name="Tailwind" />
                             
                     </div>
-                    <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
+                    <div className="max-sm:flex max-sm:justify-center items-center mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
                         <Button className=" w-max shadow-button">
                             Entre em Contato
-                            <HiArrowNarrowRight size={20}/>
+                            <Handshake className="text-white" size={20}/>
                         </Button>
 
-                        <div className=" text-2xl text-gray-600 flex items-center h-20 gap-3">
+                        <div className="max-sm:flex max-sm:justify-center text-2xl text-white flex items-center h-20 gap-3">
                             {MOCK_CONTACTS.map((contact, index) => (
                                 <a
                                     href={contact.url}
                                     key={`contact-${index}`}
                                     target="_blank"
-                                    className="hover:text-green-100 transition-colors"
+                                    className=" hover:text-green-400 transition-colors"
                                 >
                                     {contact.icon}
                                 </a>
@@ -68,7 +68,7 @@ export const HeroSection = () => {
                     height={404}
                     src={"/images/profile-pic.jpg"}
                     alt="Foto de perfil do Erivelton Matos"
-                    className="animate__animated animate__fadeInRight w-[300px] h-[400px] lg:w-[404px] mb-6 lg:mb-0 shadow-2xl rounded-lg object-cover shadow-emerald-500"
+                    className="max-sm:w-90 max-sm:h-60 animate__animated animate__fadeInRight w-[300px] h-[300px] mt-[8.5rem] mr-2 lg:mb-0 shadow-2xl rounded-lg object-cover shadow-emerald-500"
                 />
             </div>
         </section>

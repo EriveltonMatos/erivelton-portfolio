@@ -10,17 +10,25 @@ const NAV_ITEM = [
         href: '/'
     },
     {
+        label: 'Conhecimentos',
+        href: '#conhecimentos'
+    },
+    {
         label: 'Projetos',
-        href: '/projects'
-    }
+        href: '#projetos'
+    },
+    {
+        label: 'Experiências',
+        href: '#experiências'
+    },
 
 ]
 
 export const Header = () => {
     return (
-        <header className="absolute top-0 w-full z-10 h-24 flex items-center justify-center">
-            <div className="container flex items-center justify-between">
-                <Link href="/">
+        <header className="absolute top-0 w-full z-10 h-24 flex items-center justify-center ">
+            <div className=" max-sm:flex-col max-sm:justify-center  container flex items-center justify-between">
+                <Link href="#">
                    <Image
                    width={90}
                    height={90}
@@ -28,7 +36,7 @@ export const Header = () => {
                    alt='Logo Erivelton Matos'
                    />
                 </Link>
-                <nav className="flex items-center gap-4 sm:gap-10">
+                <nav className="max-sm:hidden flex items-center gap-4 sm:gap-10 ">
                     {NAV_ITEM.map(item => (
                         <NavItem {...item} key={item.label} />
                     ))}

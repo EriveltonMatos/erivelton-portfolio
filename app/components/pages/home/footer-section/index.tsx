@@ -39,7 +39,7 @@ export const FooterSection = () => {
                                     href={contact.url}
                                     key={`contact-${index}`}
                                     target="_blank"
-                                    className="hover:text-green-100 transition-colors"
+                                    className="hover:text-emerald-400 transition-colors"
                                 >
                                     {contact.icon}
                                 </a>

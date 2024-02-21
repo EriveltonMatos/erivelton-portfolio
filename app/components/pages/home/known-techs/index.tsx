@@ -28,9 +28,9 @@ export const KnownTechs = () => {
         }}
         viewport={{ amount: 0 }}
         className="flex gap-6 lg:gap-12 flex-col lg:flex-row ">
-        <section className=" container py-16">
+        <section id="conhecimentos" className=" container py-16">
            
-            <SectionTitle subtitle="competências" title="Conhecimentos" />
+            <SectionTitle  subtitle="competências" title="Conhecimentos" />
             
             <div className="grid grid-cols-[repeat(auto-fit,minmax(264px,1fr))] gap-3 mt-[60px]">
                 
