@@ -4,6 +4,8 @@ import { Highlightedprojects } from "./components/pages/home/highlighted-project
 import { KnownTechs } from "./components/pages/home/known-techs";
 import { WorkExperience } from "./components/pages/home/work-experience";
 
+
+
 export default async function Home() {
   return (
     <>

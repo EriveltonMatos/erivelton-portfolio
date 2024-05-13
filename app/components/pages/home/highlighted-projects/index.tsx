@@ -10,7 +10,7 @@ export const Highlightedprojects = () => {
 
             <div>
                 <ProjectCard />
-                <HorizontalDivider className="my-16" />
+            
             </div>
         </section>
     )

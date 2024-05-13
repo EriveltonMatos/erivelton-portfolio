@@ -23,7 +23,7 @@ export const ExperienceItem = () => {
         viewport={{ amount: 0 }}
         className="grid grid-cols-[40px 1fr] gap-4 md:gap-10">
             <div className="flex items-center gap-4">
-               <div className="rounded-full border border-gray-500 p-0.5">
+               <div className="rounded-full border border-purple-600 p-0.5">
                     <Image 
                     src="/images/unichristus-logo.png" 
                     width={100}
@@ -33,7 +33,7 @@ export const ExperienceItem = () => {
                     />
                 </div> 
 
-                <div className="h-full w-[1px] bg-gray-800"></div>
+                <div className="h-full w-[1px] bg-purple-800"></div>
 
                 <div>
                     <div className="flex flex-col gap-2 text-sm sm:text-base">
@@ -81,7 +81,7 @@ export const ExperienceItem = () => {
             </div>
 
             <div className="flex items-center gap-4">
-               <div className="rounded-full border border-gray-500 p-0.5">
+               <div className="rounded-full border border-purple-600 p-0.5">
                     <Image 
                     src="/images/botelho-icon.jpg" 
                     width={75}
@@ -91,7 +91,7 @@ export const ExperienceItem = () => {
                     />
                 </div> 
 
-                <div className="h-full w-[1px] bg-gray-800"></div>
+                <div className="h-full w-[1px] bg-purple-800"></div>
 
                 <div>
                     <div className="flex flex-col gap-2 text-sm sm:text-base">

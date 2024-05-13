@@ -32,7 +32,7 @@ export const Header = () => {
                    <Image
                    width={90}
                    height={90}
-                   src="/images/wolf-pic.png"
+                   src="/images/wolf-piccc.png"
                    alt='Logo Erivelton Matos'
                    />
                 </Link>

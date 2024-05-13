@@ -10,36 +10,33 @@ const MOCK_CONTACTS = [
     {
         url: 'https://linkedin.com/in/erivelton-matos-5a7587123',
         icon: <TbBrandLinkedin />
-    },
-    {
-        url: 'https://wa.me/5585997247193',
-        icon: <TbBrandWhatsapp />
     }
     
 ]
 
 export const FooterSection = () => {
     return (
-        <section className="container py-16 mx-auto border-t border-emerald-400 flex items-center justify-between">
-            <div>
+        <section className="container py-16 mx-auto border-t border-purple-600 flex items-center justify-between">
+            <div >
+            <a href="#">
                 <Image 
                     width={130}
                     height={130}
-                    src={"/images/wolf-pic.png"}
+                    src={"/images/wolf-piccc.png"}
                     alt="Foto"
                     className="mb-6 lg:mb-0 "
-                
                 />
+            </a>
             </div>
 
             <div>
-            <div className=" text-4xl text-gray-600 flex items-center h-20 gap-3">
+            <div className=" text-4xl text-white flex items-center h-20 gap-3">
                             {MOCK_CONTACTS.map((contact, index) => (
                                 <a
                                     href={contact.url}
                                     key={`contact-${index}`}
                                     target="_blank"
-                                    className="hover:text-emerald-400 transition-colors"
+                                    className="hover:text-purple-600 transition-colors"
                                 >
                                     {contact.icon}
                                 </a>

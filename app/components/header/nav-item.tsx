@@ -1,5 +1,4 @@
 import { cn } from "@/app/lib/utils";
-import { usePathname } from 'next/navigation';
 
 
 type NavItemProps = {
@@ -8,15 +7,12 @@ type NavItemProps = {
 }
 
 export const NavItem = ({ label, href } : NavItemProps ) => {
-    const pathname = usePathname();
-    const isActive = pathname === href;
 
     return (
         <a href={href} className={cn(
-            'text-gray-400 flex items-center gap-2 font-medium font-mono',
-            isActive && 'text-gray-50'
+            'corPrincipal flex items-center gap-2 font-medium font-mono',
         )} >
-            <span className="text-emerald-400 ">#</span>
+            <span className="text-yellow-300 ">#</span>
             {label}
         </a>
     )

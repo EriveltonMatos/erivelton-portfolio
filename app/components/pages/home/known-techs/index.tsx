@@ -5,6 +5,7 @@ import { SiHibernate, SiSpring } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import 'animate.css'
 import { MotionDiv } from "@/app/components/motion-div/motion-div"
+import { HorizontalDivider } from "@/app/components/divider/horizontal";
 
 
 
@@ -31,6 +32,8 @@ export const KnownTechs = () => {
         <section id="conhecimentos" className=" container py-16">
            
             <SectionTitle  subtitle="competências" title="Conhecimentos" />
+
+            <HorizontalDivider className="mb-16"/>
             
             <div className="grid grid-cols-[repeat(auto-fit,minmax(264px,1fr))] gap-3 mt-[60px]">
                 

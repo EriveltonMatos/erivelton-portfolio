@@ -25,41 +25,42 @@ export const ProjectCard = () => {
         }}
         viewport={{ amount: 0 }}
         className="flex gap-6 lg:gap-12 flex-col lg:flex-row ">
-            <div className="w-full h-full">
+            <div className="w-[50%] h-full">
                 
                 <Image
                 width={420}
                 height={304}
                 alt="Thumbnail do projeto"
-                src="/images/imagem-projeto-teste.png" 
-                className="w-full  sm:h-[300px] lg:w-[420px] lg:min-h-full object-cover rounded-lg"
+                src="/images/dom-diegoo.png" 
+                className="w-full sm:h-[250px] lg:w-[320px] lg:min-h-full object-cover rounded-lg"
                 />
                
             </div>
             <div>
                 <h3 className="flex items-center gap-3 font-medium text-lg text-gray-50">
                     <Image 
-                        width={20}
-                        height={20}
+                        width={30}
+                        height={30}
                         alt=""
-                        src="/images/icons/project-title-icon.svg"
+                        src="/images/vaporwave.png"
                     />
-                    Em Atualização
+                    Dom Diego - Barbearia
                 </h3>
                 
-                <p className="text-gray-400 my-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate rem accusantium dolorem? Sed vitae est totam quo veritatis mollitia ipsa unde perspiciatis vel architecto, dolorum error explicabo nam in amet voluptatem soluta corporis. Error neque inventore quae quisquam! Facere perspiciatis porro doloremque exercitationem obcaecati cum ab sapiente est sed aspernatur.
-                </p>
+                <p className="text-gray-400 my-6">Projeto freelance da barbearia Dom-Diego, localizada na Avenida Bezerra de Menezes, Fortaleza / CE, uma referência em estilo e cuidado masculino na região. </p>
+               
+                <p className="text-gray-400 my-6">No site da Barbearia Dom-Diego, os clientes podem explorar facilmente os serviços oferecidos, agendar horários pelo whatsapp e conhecer mais sobre a empresa. </p>
+
                
                 <div className="flex gap-x-2 gap-y-3 flex-wrap mb-8 lg:max-w-[350px]" >
                     <TechBadge name="Next.js"/>
+                    <TechBadge name="React"/>
                 </div>
                 
                 
-                <Link href="/projects/book-wise">
+                <Link href="https://barbearia-dom-diego.vercel.app/" target="_blank">
                     Ver Projeto 
                     <HiArrowNarrowRight />
-                    
                 </Link>
                 
             </div>
