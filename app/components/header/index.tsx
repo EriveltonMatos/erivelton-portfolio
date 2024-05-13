@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { NavItem } from './nav-item';
 
+
+
 const NAV_ITEM = [
     {
         label: 'Home',
@@ -25,7 +27,7 @@ const NAV_ITEM = [
 ]
 
 export const Header = () => {
-    return (
+    return ( 
         <header className="absolute top-0 w-full z-10 h-24 flex items-center justify-center ">
             <div className=" max-sm:flex-col max-sm:justify-center  container flex items-center justify-between">
                 <Link href="#">
